@@ -1,0 +1,41 @@
+*Para crear un nuevo alias hay que abrir el archivo de .bashrc en el home (/home/miguel)
+	*para crear el alias es: alias name='orden'
+
+
+
+
+
+*Para guardar un alias hay que ejecutar el comando . ~/.bashrc
+
+
+
+
+
+
+*Para descomprimir un archivo .tar: 
+	*tar -xf filename.gz
+	*se puede agregar el argumento -xvf para ver los archivos que se desc
+	omprimen
+
+
+
+*Para descomprimir un archivo .zip: 
+	escribimos: unzip file_name.zip
+ 
+
+
+
+
+*Para instalar un paquet .Deb se ejecuta el comando: sudo apt install ./paquete.deb
+	*Para instalar varios paquetes deb a la vez: sudo dpkg -i *.deb
+
+
+
+
+*Para ejecutar un archivo .run: 
+	//Entramos en la ruta
+	cd ruta_que_sea
+	//Le damos permisos de ejecución
+	sudo chmod +x archivo.run
+	//Y luego lo ejecutas con
+	sudo ./archivo.run
