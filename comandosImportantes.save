@@ -1,0 +1,93 @@
+*Para crear un nuevo alias hay que abrir el archivo de .bashrc en el home (/home/miguel)
+	*para crear el alias es: alias name='orden'
+
+
+
+	
+
+*Para guardar un alias hay que ejecutar el comando . ~/.bashrc
+
+
+
+
+
+
+*Para descomprimir un archivo .tar: 
+	*tar -xf filename.gz
+	*se puede agregar el argumento -xvf para ver los archivos que se desc
+	omprimen
+
+
+
+*Para descomprimir un archivo .zip: 
+	escribimos: unzip file_name.zip
+ 
+
+
+
+
+*Para instalar un paquet .Deb se ejecuta el comando: sudo apt install ./paquete.deb
+	*Para instalar varios paquetes deb a la vez: sudo dpkg -i *.deb
+
+
+
+
+*Para ejecutar un archivo .run: 
+	//Entramos en la ruta
+	cd ruta_que_sea
+	//Le damos permisos de ejecución
+	sudo chmod +x archivo.run
+	//Y luego lo ejecutas con
+	sudo ./archivo.run
+
+
+
+
+*Los archivos del servidor local deben ser guardados en la dirección:
+	/var/www/html
+
+
+
+
+*php normalmente no muestra los errores. Para ver los errores vamos a la direccion: 
+	/etc/php/8.0/apache2/apache.init
+	buscar la línea display_errors y se le cambia el valor de off y ponemos on el valor 
+
+
+
+
+*Tener en cuenta al instalar phpMyAdmin: 
+	*Cuando se baja el archivo .zip (o el que sea) se guarda en la carpeta del servidor, en este caso es /var/www/html
+	*Es necesario haber descargado y configurado Mysql para poder definir un usuario con el cual acceder, ayuda: https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04-es#paso-3-ajustar-la-autenticacion-y-los-privilegios-de-usuario-opcional
+
+
+
+
+*Los credenciales de acceso a phpMyAdmin son: 
+	user: admin password:8del2del2004
+
+
+
+*Para ver la ip del servidor: 
+hostname -I
+
+
+
+Para saber si el servidor está corriendo:
+sudo systemctl status apache2
+
+
+
+Para detener el servidor:
+sudo systemctl stop apache2
+
+
+
+Para iniciar el servidor:
+sudo systemctl start apache2
+
+
+
+Para reinciar el servidor:
+sudo systemctl restart apache2
+
