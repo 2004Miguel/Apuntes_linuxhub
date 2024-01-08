@@ -91,3 +91,38 @@ sudo systemctl start apache2
 Para reinciar el servidor:
 sudo systemctl restart apache2
 
+
+
+
+Para conectarse al reposisitorio de github hay que seguir estos pasos:
+
+*crear la llave ssh:
+
+-ssh-keygen -t ed25519(este es el nombre) -C "email". Dar enter a las líneas siguienste si es 
+necesario
+
+*para agregar las llaves ssh ssh-agent:
+
+-eval "$(ssh-agent -s)".Va a aparecer agen pid 338
+-ssh-add ~/.ssh/id_ed25519 (esto agrega la llave privada)
+
+*con el comando git add remote origin urlrepo, se conecta al remoto
+
+
+
+Para establecer una conexión ssh se hace:
+
+*Iniciar el servidor ssh:
+-sudo systemctl start ssh
+
+*conectarse:
+-ssh remote_user@remote_host (ip)
+
+
+
+Con el comando SCP se pueden mover archivos o directorios del server al local y bisiversa:
+*Para transferir archivos al servidor:
+-scp archivo-local user@remote-server:/directorio/destino/servidor/remoto
+
+*Para transeferir archivos desde el server al local:
+-scp user@remote_server:/ruta/servidor/remoto/archivo archivo-en-local
